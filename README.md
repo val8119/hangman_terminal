@@ -7,4 +7,4 @@
 
  Example:
 
- ![Hangman example](https://raw.githubusercontent.com/val8119/hangman_terminal/master/example_images/hangman_example.png)
+ ![Hangman example](example_images/hangman_example.png)
