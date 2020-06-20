@@ -41,12 +41,12 @@ print("""
 Loaded Hangman.py | Picks a random word, user tries to guess it
 
 Commands:
-custom - set a custom secret word with a custom amount of guesses
-""")
+help - displays commands
+custom - set a custom secret word with a custom amount of guesses""")
 
 while True:
-    print("Would you like to start the game? (yes/no)") if not IsAgain else print(
-        "Would you like try again? (yes/no)")
+    print("\nWould you like to start the game? (yes/no)") if not IsAgain else print(
+        "\nWould you like try again? (yes/no)")
 
     command = input("> ").lower().strip()
 
@@ -100,17 +100,13 @@ while True:
 
                 char_count += 1
 
-        if guess_word == secret_word:
+        if guess_word == secret_word or guess == secret_word:
             print("You guessed the word, you win!")
-            print(f"The word was {secret_word}.\n")
-
-        elif guess == secret_word:
-            print("You guessed the word, you win!")
-            print(f"The word was {secret_word}.\n")
+            print(f"The word was {secret_word}.")
 
         elif guesses == 0:
             print("You ran out of guesses, you lose!")
-            print(f"The word was {secret_word}.\n")
+            print(f"The word was {secret_word}.")
 
     elif command == "custom":
 
@@ -178,7 +174,16 @@ while True:
             print("You ran out of guesses, you lose!")
             print(f"The word was {secret_word}.\n")
 
+    elif command == "help":
+        print("""
+Commands:
+help - displays commands
+custom - set a custom secret word with a custom amount of guesses""")
+
     elif command == "no":
         break
+
+    else:
+        print("ERROR: Invalid command")
 
 print("Goodbye!")
