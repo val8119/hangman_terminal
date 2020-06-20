@@ -1,9 +1,9 @@
 # hangman_terminal
  Terminal based hangman game.
 
- Commands:
- help - displays command
- custom - set a custom secret word with a custom amount of guesses
+ Commands:<br/>
+ help - displays command<br/>
+ custom - set a custom secret word with a custom amount of guesses<br/>
 
  Example:
 
