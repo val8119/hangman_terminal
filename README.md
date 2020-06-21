@@ -1,4 +1,4 @@
-# hangman_terminal
+# Hangman (terminal)
  Terminal based hangman game.
 
  Commands:<br/>
